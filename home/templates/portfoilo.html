@@ -1,0 +1,34 @@
+ {% extends "home.html" %}
+
+{% block start %}
+
+<div id="portfolio" class="portfolio-area section-padding ">
+        <div class="container">
+            <div class="row">
+
+
+
+                    </div>
+                </div>
+            </div> <h2>Taslo Characters</h2>
+            <div class="row container" style="margin: auto;">
+                {% for work in works %}
+                    <div style="margin: 5px 10px 30px;display: flex;flex-grow: 1;padding-right: 30px;" class="  col-md-5   hover-animate card shadow border-0 h-100">
+                        <div style="margin-top: 30px;"  class="" >
+                            <a class="view img" href="{{ work.image.url }}">
+                                <img class="img-fluid card" style="height:290px;width: 450px;object-fit:cover;"  src="{{ work.image.url }}" alt="work image">
+                            </a>
+
+                           <div class="gallery-text"style="margin-top: 20px;" >
+                                <h4>{{ work.title }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ {% endblock %}

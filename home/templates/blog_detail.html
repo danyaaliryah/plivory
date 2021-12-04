@@ -1,0 +1,30 @@
+{% extends "home.html" %}
+
+{% block start %}
+{% load static %}
+
+
+<section style="padding:100px;">
+    <div class="container">
+
+        <div class="row ">
+            <div ><img  class="img-responsive" style="height: 200px;
+  border-radius: 3%;
+  object-fit:cover;"
+                    src="/media/{{blog_obj.image}}"
+                   ></div>
+
+                        <div style="padding:10px;"><h3 ><a class="text-dark" >
+               {{blog_obj.title}}          </a></h3><p class="text-gray-500 text-sm my-3"><i class="far fa-clock "></i>
+                {{blog_obj.created_at}}</p> <div  style="width: 100%;word-wrap: break-word">
+                    {{blog_obj.content|safe}}
+                </div>
+
+
+                </div></div>
+    </div></div>
+</section>
+
+
+
+{% endblock %}

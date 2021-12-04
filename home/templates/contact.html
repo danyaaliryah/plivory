@@ -1,0 +1,83 @@
+{% extends "home.html" %}
+
+{% block start %}
+{% load static %}
+<h1>Contact with taslo</h1>
+<div class="row">
+
+    <!-- slider Area Start-->
+    <div class="container" style="padding-top: 20px;padding-bottom:40px;border:double;border-color:#FFB6C1;">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="hero-cap text-left">
+                    <h2 class="text25">get come info about working</h2>
+                    <div class="media contact-info">
+                            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                            <div class="media-body">
+                                <h3><!--MOBILE--></h3>
+                                <p>Mon to Sat 10am to 8pm</p>
+                            </div>
+                        </div>
+                        <div class="media contact-info">
+                            <span class="contact-info__icon"><i class="ti-email"></i></span>
+                            <div class="media-body">
+                                <h3 style="color:#E2D1ED;">example@email.com</h3>
+                                <p>Send us your query anytime!</p>
+                            </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="row">
+          <div class="col-md-5">
+<div id="contact" class="contact-banner section-padding">
+      <h1>Contact Us</h1>
+ <div class="thank-you hidden "> thankyou</div></div>
+
+    </div>
+
+    <form name="contact-form" style="background-color:#F3D3E5">
+      <p class="contact-description">
+        We'd really love to hear from you! Please fill in the form below and
+        submit
+      </p>  <div class="row">
+          <div class="col-md-5">
+        <div class="form-group wow fadeInDown" data-wow-delay="0.2s">
+                                        <input id="form_name" type="text" name="name" class="form-control"
+                                               placeholder="Enter your full name *" required="required"
+                                               data-error="Fullname is required.">
+
+      </div>
+</div>
+
+        <div class="col-md-6"> <div class="form-group wow fadeInDown" data-wow-delay="0.2s">
+         <input id="form_email" type="email" name="email" class="form-control"
+                                               placeholder="Enter your email *" required="required"
+                                               data-error="Valid email is required.">
+
+      </div></div>
+
+
+        <div class="col-md-12">
+        <div class="form-group wow fadeInUp" data-wow-delay="0.6s">
+                                        <textarea id="form_message" name="message" class="form-control"
+                                                  placeholder="Your Message *" rows="4" required="required"
+                                                  data-error="Leave a message for me"></textarea>
+
+      </div>
+</div>
+      <hr />
+
+      <button type="submit" class="submit btn " style="background-color: 	#ffb6c1;border-radius: 9px;">SUBMIT FORM</button>
+   </div>
+    </form>
+
+</div></div>
+    <script src="{% static 'js/main.js' %}"></script>
+
+</div>
+
+
+{% endblock %}
